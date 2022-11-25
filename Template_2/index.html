@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Lotte Rental</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>
+    var base_url = "/";
+  </script>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/common.js?ver=2"></script>
+  <link rel="shortcut icon" href="/uploads/siteinfo/favicon.png" />
+  <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9kAILCqqtsAqQHNPHd3Jo-tj28aXDpFA&sensor=false&region=KR"
+          async
+          defer
+  ></script>
+  <link rel="stylesheet" href="assets/plugin/slick/slick.css" />
+  <script src="assets/plugin/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="assets/css/default.css" />
+  <script src="assets/plugin/countup/jquery.counterup.js"></script>
+  <script src="assets/plugin/countup/waypoints.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+<body class="home">
+<div id="loading" class="loading">
+  <div class="loader_inner">
+    <img
+            src="assets/uploads/siteinfo/brading_20210322.png"
+            alt="Logo - 롯데이네오스화학"
+    />
+    <div class="circ"></div>
+  </div>
+</div>
+<div id="wrap">
+  <header id="header" class="header mMenuDir_right">
+    <div id="header_bar" class="header_bar">
+      <div class="nx-table">
+        <h1 id="branding" class="branding nx-td">
+          <a href="/"
+          ><img
+                  src="assets/uploads/siteinfo/brading_20210322.png"
+                  alt="Logo - 롯데이네오스화학"
+          /></a>
+        </h1>
+        <div id="main_navigation" class="main_navigation nx-td">
+          <ul id="Main-nav" class="navi navi_ko main_nav">
+            <li class="has_child">
+              <a href="/company">회사소개</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/company/ceo">CEO 인사말</a></li>
+                  <li class=""><a href="/company/overview">회사개요</a></li>
+                  <li class=""><a href="/company/vision">비전&철학</a></li>
+                  <li class=""><a href="/company/history">주요 연혁</a></li>
+                  <li class="">
+                    <a href="/company/contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/products">제품</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/products/product">제품안내</a></li>
+                  <li class="has_child">
+                    <a href="/products/process">공정안내</a
+                    ><button type="button" class="child_button">
+                    Open
+                  </button>
+                    <div class="sub-nav">
+                      <ul>
+                        <li class="">
+                          <a href="/products/process/all">전체 공정</a>
+                        </li>
+                        <li class="">
+                          <a href="/products/process/acetate">초산 공정</a>
+                        </li>
+                        <li class="">
+                          <a href="/products/process/vinyl_acetate"
+                          >초산비닐 공정</a
+                          >
+                        </li>
+                        <li class="">
+                          <a href="/products/process/carbon_monoxide"
+                          >일산화탄소 공정</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/csm">지속가능경영</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class="">
+                    <a href="/csm/environment">안전환경경영</a>
+                  </li>
+                  <li class=""><a href="/csm/law">준법경영</a></li>
+                  <li class=""><a href="/csm/inquiry">사이버 신문고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/recruit">인재채용</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/recruit/people">인재상</a></li>
+                  <li class=""><a href="/recruit/job">직무소개</a></li>
+                  <li class=""><a href="/recruit/system">인사제도</a></li>
+                  <li class=""><a href="/recruit/welfare">복리후생</a></li>
+                  <li class=""><a href="/recruit/guide">채용안내</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/promote">홍보센터</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class="">
+                    <a href="/promote/news">롯데이네오스화학 소식</a>
+                  </li>
+                  <li class="">
+                    <a href="/promote/contribution">사회공헌</a>
+                  </li>
+                  <li class=""><a href="/promote/notice">공시정보</a></li>
+                  <li class=""><a href="/promote/history">역사관</a></li>
+                  <li class=""><a href="/promote/media">홍보영상</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="quick nx-td clearfix">
+          <div id="language_switcher" class="language_switcher type1">
+            <a href="#">KOR</a>
+            <ul id="language_list" class="language_list open">
+              <li><a href="/ko" class="act">KOR</a></li>
+              <li><a href="/en" class="">ENG</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="m_td">
+          <a href="#" id="m_nav" class="m_nav"
+          ><span class="lines"></span
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div class="fullMenu_wrap">
+      <div id="fullMenu" class="fullMenu">
+        <div class="inner">
+          <ul id="full_nav" class="navi navi_ko">
+            <li class="has_child">
+              <a href="/company">회사소개</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/company/ceo">CEO 인사말</a></li>
+                  <li class=""><a href="/company/overview">회사개요</a></li>
+                  <li class=""><a href="/company/vision">비전&철학</a></li>
+                  <li class=""><a href="/company/history">주요 연혁</a></li>
+                  <li class="">
+                    <a href="/company/contact">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/products">제품</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/products/product">제품안내</a></li>
+                  <li class="has_child">
+                    <a href="/products/process">공정안내</a
+                    ><button type="button" class="child_button">
+                    Open
+                  </button>
+                    <div class="sub-nav">
+                      <ul>
+                        <li class="">
+                          <a href="/products/process/all">전체 공정</a>
+                        </li>
+                        <li class="">
+                          <a href="/products/process/acetate">초산 공정</a>
+                        </li>
+                        <li class="">
+                          <a href="/products/process/vinyl_acetate"
+                          >초산비닐 공정</a
+                          >
+                        </li>
+                        <li class="">
+                          <a href="/products/process/carbon_monoxide"
+                          >일산화탄소 공정</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/csm">지속가능경영</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class="">
+                    <a href="/csm/environment">안전환경경영</a>
+                  </li>
+                  <li class=""><a href="/csm/law">준법경영</a></li>
+                  <li class=""><a href="/csm/inquiry">사이버 신문고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/recruit">인재채용</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class=""><a href="/recruit/people">인재상</a></li>
+                  <li class=""><a href="/recruit/job">직무소개</a></li>
+                  <li class=""><a href="/recruit/system">인사제도</a></li>
+                  <li class=""><a href="/recruit/welfare">복리후생</a></li>
+                  <li class=""><a href="/recruit/guide">채용안내</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="has_child">
+              <a href="/promote">홍보센터</a
+              ><button type="button" class="child_button">Open</button>
+              <div class="sub-nav">
+                <ul>
+                  <li class="">
+                    <a href="/promote/news">롯데이네오스화학 소식</a>
+                  </li>
+                  <li class="">
+                    <a href="/promote/contribution">사회공헌</a>
+                  </li>
+                  <li class=""><a href="/promote/notice">공시정보</a></li>
+                  <li class=""><a href="/promote/history">역사관</a></li>
+                  <li class=""><a href="/promote/media">홍보영상</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--Mobile Menu -->
+  <div id="mMenu" class="mMenu_type1 right">
+    <div class="wrapper">
+      <div class="mHeader">
+        <ul class="mShortmenu clearfix">
+          <li><a href="/">KOR</a></li>
+          <li><a href="/en">ENG</a></li>
+        </ul>
+        <a href="#" class="close" id="mMenu_close">CLOSE</a>
+      </div>
+      <div class="mContents">
+        <ul id="Mobile-nav" class="navi navi_ko mobile_nav">
+          <li class="has_child">
+            <a href="/company">회사소개</a
+            ><button type="button" class="child_button">Open</button>
+            <div class="sub-nav">
+              <ul>
+                <li class=""><a href="/company/ceo">CEO 인사말</a></li>
+                <li class=""><a href="/company/overview">회사개요</a></li>
+                <li class=""><a href="/company/vision">비전&철학</a></li>
+                <li class=""><a href="/company/history">주요 연혁</a></li>
+                <li class=""><a href="/company/contact">Contact Us</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_child">
+            <a href="/products">제품</a
+            ><button type="button" class="child_button">Open</button>
+            <div class="sub-nav">
+              <ul>
+                <li class=""><a href="/products/product">제품안내</a></li>
+                <li class="has_child">
+                  <a href="/products/process">공정안내</a
+                  ><button type="button" class="child_button">Open</button>
+                  <div class="sub-nav">
+                    <ul>
+                      <li class="">
+                        <a href="/products/process/all">전체 공정</a>
+                      </li>
+                      <li class="">
+                        <a href="/products/process/acetate">초산 공정</a>
+                      </li>
+                      <li class="">
+                        <a href="/products/process/vinyl_acetate"
+                        >초산비닐 공정</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="/products/process/carbon_monoxide"
+                        >일산화탄소 공정</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_child">
+            <a href="/csm">지속가능경영</a
+            ><button type="button" class="child_button">Open</button>
+            <div class="sub-nav">
+              <ul>
+                <li class="">
+                  <a href="/csm/environment">안전환경경영</a>
+                </li>
+                <li class=""><a href="/csm/law">준법경영</a></li>
+                <li class=""><a href="/csm/inquiry">사이버 신문고</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_child">
+            <a href="/recruit">인재채용</a
+            ><button type="button" class="child_button">Open</button>
+            <div class="sub-nav">
+              <ul>
+                <li class=""><a href="/recruit/people">인재상</a></li>
+                <li class=""><a href="/recruit/job">직무소개</a></li>
+                <li class=""><a href="/recruit/system">인사제도</a></li>
+                <li class=""><a href="/recruit/welfare">복리후생</a></li>
+                <li class=""><a href="/recruit/guide">채용안내</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="has_child">
+            <a href="/promote">홍보센터</a
+            ><button type="button" class="child_button">Open</button>
+            <div class="sub-nav">
+              <ul>
+                <li class="">
+                  <a href="/promote/news">롯데이네오스화학 소식</a>
+                </li>
+                <li class="">
+                  <a href="/promote/contribution">사회공헌</a>
+                </li>
+                <li class=""><a href="/promote/notice">공시정보</a></li>
+                <li class=""><a href="/promote/history">역사관</a></li>
+                <li class=""><a href="/promote/media">홍보영상</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="mFooter text-center">
+      <div class="nx-td">
+        <a href="/e-portal.html" class="btn potal_quick" rarget="_blank"
+        >e-Portal 시스템</a
+        >
+      </div>
+    </div>
+  </div>
+  <section class="main_sec01">
+    <div class="main_visual_wrap">
+      <ul id="main_visual" class="main_visual">
+        <li class="slideList list01">
+          <div class="nx-table">
+            <div class="txtArea">
+              <h2><span>Global Top-tier</span> <br />Acetyls Company</h2>
+              <p>
+                롯데이네오스화학이 세계 최고의 <br />아세틸스 기업으로
+                도약합니다.
+              </p>
+            </div>
+            <div class="imgArea">
+              <img
+                      src="assets/uploads/media/vis01.png"
+                      alt="Asia Top-tier Acetyls Company"
+              />
+            </div>
+          </div>
+        </li>
+        <li class="slideList list01">
+          <div class="nx-table">
+            <div class="txtArea">
+              <h2>LOTTE INEOS <br />CHEMICAL</h2>
+              <p>
+                나 자신을 위한 건강, 후손을 위한 환경, 우리를 위한 안전
+                <br class="hide_400" />HSE 지속가능 경영을 통해 100년의
+                역사를 새로 씁니다
+              </p>
+            </div>
+            <div class="imgArea">
+              <img
+                      src="assets/uploads/media/vis02.png"
+                      alt="LOTTE INEOS CHEMICAL"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div id="vis_arrowWrap" class="vis_arrowWrap">
+        <button class="arrow prev">슬라이드 이전으로</button>
+        <button class="arrow next">슬라이드 다음으로</button>
+      </div>
+      <div class="scrollArea">
+        <a href="#" id="btn_scroll" title="하단으로 스크롤 이동"
+        >스크롤 이동</a
+        >
+      </div>
+    </div>
+    <div class="main_company" id="main_company">
+      <div class="inner">
+        <div class="mtt pb90">
+          <h3>롯데이네오스화학</h3>
+          <p>
+            롯데이네오스화학은 1989년 영국의 BP사와의 합작 계약을 통해
+            설립되어 고부가가치 정밀 화학제품인 초산과
+            <br class="hide_768" />그 유도체인 VAM(초산비닐)을 생산하는 국내
+            유일의 기업입니다.
+          </p>
+        </div>
+        <ul class="mcompany_list clearfix">
+          <li>
+            <p>1989년 설립된 <br />국내 유일의 초산생산 기업</p>
+            <h4>
+              <span class="counting" id="count_1" data-time="800" data-num="33">33</span> 년
+            </h4>
+          </li>
+          <li>
+            <p>자산총계 <br />(2021년 기준)</p>
+            <h4>
+                  <span class="counting"
+                          id="count_2"
+                          data-time="1200"
+                          data-num="1">
+                    1
+                  </span>조
+              <span class="counting"
+                      id="count_2"
+                      data-time="1200"
+                      data-num="428">
+                428
+              </span>억
+            </h4>
+          </li>
+          <li>
+            <p>매출총액 <br />(2021년 기준)</p>
+            <h4>
+                  <span
+                          class="counting"
+                          id="count_3"
+                          data-time="1600"
+                          data-num="1"
+                  >1</span
+                  >조
+              <span
+                      class="counting"
+                      id="count_3"
+                      data-time="1600"
+                      data-num="3833"
+              >3,833</span
+              >억
+            </h4>
+          </li>
+          <li>
+            <p>영업이익 <br />(2021년 기준)</p>
+            <h4>
+                  <span
+                          class="counting"
+                          id="count_4"
+                          data-time="2000"
+                          data-num="6470"
+                  >6,470</span
+                  >억
+            </h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_product">
+      <ul class="clearfix">
+        <li>
+          <a href="/products/process/acetate" title="초산 페이지로 이동">
+            <div class="nx-table">
+              <div class="nx-td">
+                <h5>초산</h5>
+                <div class="icArea">
+                  <img src="assets/uploads/media/pdt_ic01.png" alt="초산" />
+                </div>
+                <h4>650,000</h4>
+                <p>(연간생산량/톤)</p>
+                <div class="more btn_more"><span>자세히보기</span></div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+                  href="/products/process/vinyl_acetate"
+                  title="초산비닐 페이지로 이동"
+          >
+            <div class="nx-table">
+              <div class="nx-td">
+                <h5>VAM<span>(초산비닐)</span></h5>
+                <div class="icArea">
+                  <img
+                          src="assets/uploads/media/pdt_ic02.png"
+                          alt="VAM(초산비닐)"
+                  />
+                </div>
+                <h4>400,000</h4>
+                <p>(연간생산량/톤)</p>
+                <div class="more btn_more"><span>자세히보기</span></div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a
+                  href="/products/process/carbon_monoxide"
+                  title="수소 페이지로 이동"
+          >
+            <div class="nx-table">
+              <div class="nx-td">
+                <h5>수소</h5>
+                <div class="icArea">
+                  <img src="assets/uploads/media/pdt_ic03.png" alt="수소" />
+                </div>
+                <h4>239,000</h4>
+                <p>(연간생산량/KNm3)</p>
+                <div class="more btn_more"><span>자세히보기</span></div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="main_sec02">
+    <div class="inner">
+      <div class="ttArea">
+        <h4>HSE 지속가능경영</h4>
+        <h3>
+          롯데이네오스화학은 건강(H), 안전(S), 환경(E) 분야를 경영 활동의
+          <br class="hide_768" />핵심 요소로 지정하고 모든 임직원이
+          최우선으로 실천하고 있습니다
+        </h3>
+      </div>
+      <div class="main_enviroWrap">
+        <div class="txtArea">
+          <h3>LOTTE INEOS <br class="hide_768" />CHEMICAL</h3>
+          <p>
+            나 자신을 위한 건강, 후손을 위한 환경, 우리를 위한 안전을 통해
+            <br class="hide_1110 show_970 hide_640" />100년의 역사를 새로
+            쓰는 롯데이네오스화학의 지속가능경영
+          </p>
+        </div>
+        <div class="linkArea">
+          <div class="link_inner">
+            <div class="dots_lotte dots_healty">
+              <dl>
+                <dt>Health</dt>
+                <dd>건강경영</dd>
+              </dl>
+              <a
+                      href="/csm/environment"
+                      class="btn_more"
+                      title="건강경영 페이지로 이동"
+              ><span>건강경영 더보기</span></a
+              >
+            </div>
+            <div class="dots_lotte dots_safety">
+              <dl>
+                <dt>Safety</dt>
+                <dd>안전경영</dd>
+              </dl>
+              <a
+                      href="/csm/environment/#!sec_ev_03"
+                      class="btn_more"
+                      title="안전경영 페이지로 이동"
+              ><span>안전경영 더보기</span></a
+              >
+            </div>
+            <div class="dots_lotte dots_environment">
+              <dl>
+                <dt>Environment</dt>
+                <dd>환경경영</dd>
+              </dl>
+              <a
+                      href="/csm/environment/#!sec_ev_04"
+                      class="btn_more"
+                      title="환경경영 페이지로 이동"
+              ><span>환경경영 더보기</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main_sec03">
+    <div class="inner">
+      <div class="mtt pb70">
+        <h3>홍보센터</h3>
+        <p>
+          롯데이네오스화학은 열린 소통을 기반으로 항상 고객과 소통하고
+          있습니다
+        </p>
+      </div>
+      <div class="main_noticeArea pb10">
+        <ul class="clearfix">
+          <li>
+            <a href="/promote/news/95" title="게시물 상세로 이동">
+              <h4 class="tt">정신건강증진 힐링 콘서트 개최</h4>
+              <p class="desc">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;...
+              </p>
+              <p class="date">2022.10.24</p>
+            </a>
+          </li>
+          <li>
+            <a href="/promote/news/94" title="게시물 상세로 이동">
+              <h4 class="tt">회야댐 환경 정화활동</h4>
+              <p class="desc">
+                롯데이네오스화학은 26일 울주군 회야댐 생태습지 일대에서
+                정승원 대표이사 및 임직원 40여명이 참...
+              </p>
+              <p class="date">2022.10.07</p>
+            </a>
+          </li>
+          <li>
+            <a href="/promote/news/93" title="게시물 상세로 이동">
+              <h4 class="tt">'22년 상반기 Fearless Leader 시상</h4>
+              <p class="desc">
+                롯데이네오스화학은 지난 9일 &#39;22년도
+                상반기&nbsp;&quot;Fearless Leader&quot; 시상식을&nbsp;진...
+              </p>
+              <p class="date">2022.08.10</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main_promote">
+      <div class="inner02">
+        <div class="nx-table">
+          <div class="nx-td promote01">
+            <h4>역사관</h4>
+            <p>32년간의 롯데이네오스화학의 역사</p>
+            <ul class="btn_list">
+              <li>
+                <a
+                        href="/promote/history"
+                        class="btn"
+                        title="역사관 페이지로 이동"
+                >자세히보기</a
+                >
+              </li>
+              <li>
+                <a
+                        href="/promote/history/people"
+                        class="btn"
+                        title="역대 경영진 페이지로 이동"
+                >역대 경영진</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nx-td promote02">
+            <h4>회사 홍보영상</h4>
+            <p>30년을 넘어 100년을 도약합니다.</p>
+            <div class="btnArea">
+              <a
+                      href="/promote/media"
+                      class="btn"
+                      title="롯데이네오스화학 홍보동영상 페이지로 이동"
+              ><span class="hide_970">롯데이네오스화학</span> 홍보 동영상
+                보기</a
+              >
+            </div>
+          </div>
+          <div class="nx-td promote03">
+            <h4>롯데이네오스화학 30년사</h4>
+            <p>회사 홍보 이북 보기</p>
+            <div class="btnArea">
+              <a href="assets/uploads/lotte_30.pdf" class="btn" download
+              >PDF 보기</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main_invest">
+      <div class="inner">
+        <h4><span>공시정보</span></h4>
+        <h3>
+          고객과 함께 <span>새로운 가치</span>와
+          <br class="hide show_640" /><span>이윤</span>을
+          <span>창출</span>합니다.
+        </h3>
+        <div class="btnArea">
+          <ul class="clearfix">
+            <li>
+              <a href="/promote/notice" title="공시정보 페이지로 이동"
+              >바로가기 <i class="ic"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="main_sec04">
+    <div class="main_people">
+      <div class="inner02">
+        <div class="nx-table">
+          <div class="imgArea">
+            <div class="imgArea_inner">
+              <img
+                      src="assets/uploads/media/people.png"
+                      alt="롯데이네오스화학과 함께할 글로벌 인재"
+              />
+            </div>
+          </div>
+          <div class="txtArea">
+            <h3><span>LOTTE INEOS</span> <br />PEOPLE</h3>
+            <p>
+              롯데이네오스화학과 함께 할 핵심가치를 보유하고 <br />비전
+              지향적인 글로벌 인재를 찾습니다
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mpeople_wrap pt80">
+      <div class="inner">
+        <ul class="mpeople_list clearfix">
+          <li>
+            <a href="/recruit/people" title="인재상 페이지로 이동">
+              <h4>인재상</h4>
+              <p>
+                세계 속에 우뚝 선 아름다운 롯데의
+                <br class="hide_1280" />꿈에 동참할 젊은이를 초대합니다.
+              </p>
+              <p class="detail">VIEW DETAIL</p>
+            </a>
+          </li>
+          <li>
+            <a href="/recruit/system" title="인사제도 페이지로 이동">
+              <h4>인사제도</h4>
+              <p>
+                공정하고 투명한 심사기준으로 <br class="hide_1280" />업무
+                수행 능력에 따른 평가제도
+              </p>
+              <p class="detail">VIEW DETAIL</p>
+            </a>
+          </li>
+          <li>
+            <a href="/recruit/welfare" title="복리후생 페이지로 이동">
+              <h4>복리후생</h4>
+              <p>
+                본인과 가족의 건강, 자녀의 교육과
+                <br class="hide_1280" />노후까지 함께 지원하고 고민합니다.
+              </p>
+              <p class="detail">VIEW DETAIL</p>
+            </a>
+          </li>
+          <li>
+            <a href="/recruit/guide" title="채용안내 페이지로 이동">
+              <h4>채용안내</h4>
+              <p>
+                롯데이네오스화학에서 글로벌 인재로
+                <br class="hide_1280" />거듭날 인재를 기다리고 있습니다.
+              </p>
+              <p class="detail">VIEW DETAIL</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <div class="ft_top">
+      <div class="inner clearfix">
+        <div class="linkArea">
+          <ul class="clearfix">
+            <li><a href="/lotte/sitemap">사이트맵</a></li>
+            <li><a href="/lotte/term">개인정보처리방침</a></li>
+            <li><a href="/lotte/term/#!email">이메일무단수집거부</a></li>
+            <li><a href="/csm/inquiry">사이버신문고</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="ft_bottom">
+      <div class="inner">
+        <div class="ft_logo">
+          <img src="/src/img/common/ft_logo.png" alt="롯데이네오스화학" />
+        </div>
+        <div class="addressArea">
+          <ul>
+            <li>
+              <span>울산 사업장 _</span>울산광역시 울주군 청량읍 상개로
+              63-15 (우 44987)
+            </li>
+            <li>
+              <span>서울 사업장 _</span>서울특별시 중구 을지로5길 26,
+              미래에셋센터원빌딩 서관 8층 (우 04539)
+            </li>
+          </ul>
+          <p class="copy">
+            Copyright (C) 2020 LOTTE INEOS CHEMICAL CO.,LTD All right
+            reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#" id="btn_top" class="btn_top" title="페이지 상단으로 이동"
+    >화면위로 이동</a
+    >
+  </footer>
+  <div id="mask" class="mask" data-open=""></div>
+  <div id="pop_term" class="nxTermPop">
+    <h4 id="nxTerm_txt">약관</h4>
+    <div id="nxTermCon" class="nxTermCon">약관내용</div>
+    <div class="pt20 text-center">
+      <input
+              type="button"
+              id="nxTermPop_close"
+              class="btn nxPopClose"
+              data-id="pop_term"
+              value="닫기"
+      />
+    </div>
+  </div>
+</div>
+<!-- End wrap -->
+</body>
+</html>

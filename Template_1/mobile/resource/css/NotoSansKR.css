@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Thin.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Thin.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Light.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Light.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 350;
+    src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-DemiLight.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-DemiLight.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-DemiLight.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Regular.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Regular.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Medium.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Medium.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Bold.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Bold.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    src: local('Noto Sans Black'), local('NotoSans-Black'),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Black.eot),
+    url(https://www.lotterental.com/homepage/resource/fonts/eot/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'),
+    url(https://www.lotterental.com/homepage/resource/fonts/woff/NotoSansKR-Black.woff) format('woff'),
+    url(https://www.lotterental.com/homepage/resource/fonts/otf/NotoSansKR-Black.otf) format('opentype');
+}

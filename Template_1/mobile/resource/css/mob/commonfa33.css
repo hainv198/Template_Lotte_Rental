@@ -1,0 +1,109 @@
+.clear{*zoom:1}
+.clear:after{content:'';display:block;clear:both}
+.clear.s2>div, .clear.s2>li{width:50%}
+.clear.s3>div, .clear.s3>li{width:33.3333%}
+.clear.s4>div, .clear.s4>li{width:25%}
+.clear.s5>div, .clear.s5>li{width:20%}
+                                          /* tab */
+                                      .tab_nav li{float:left;cursor:pointer}
+.tab_contents{margin-top:20px}
+.tab_contents .panel{display:none}
+.tab_contents .panel.active{display:block}
+.tab_panel{display:none}
+.panel_content{padding:0 15px;text-align:center}
+.panel_content>h5{font-size:13px;font-weight:500;color:#000}
+.panel_content>p{margin-top:10px;font-size:12px;color:#333}
+/* table */
+.tbl{border-top:1px solid #666}
+.tbl table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;font-size:12px}
+.tbl table th, .tbl table td{border-width:0 0 1px 1px;border-style:solid;border-color:#dbdbdb;vertical-align:middle}
+.tbl table td{text-align:center}
+.tbl table td.nr{border-width:0 0 1px 0}
+.tbl table thead th{padding:10px;font-weight:300;color:#333}
+.tbl table tbody th{padding:10px;background-color:#f7f7f7;font-weight:300;color:#333}
+.tbl table .fst{border-left:0 none}
+.tbl table .cell{padding:8px 10px 8px 20px}
+.tbl table .f_cell{margin-right:20px;padding:10px 20px}
+.tbl table .f_cell .input_item{margin-top:5px}
+.tbl table .f_cell .input_item:first-child{margin-top:0}
+.tbl table .f_cell textarea{width:100%;height:200px}
+.tbl table .tr_color{background-color:#f7f7f7}
+.tbl table .left{text-align:left}
+.tbl.type2{margin-top:17px;border-color:#dbdbdb}
+.tbl.type2 thead th{padding:15px 10px;background-color:#f7f7f7;text-align:center}
+.tbl.type2 th, .tbl.type2 td{border-width:0 1px 1px 0}
+.tbl.type2 th.last, .tbl.type2 td.last{border-width:0 0 1px 0}
+.tbl.type2 td{padding:15px 10px}
+.tbl.scroll_x{width:100%;overflow-x:auto}
+/* button */
+.btn_set_bottom{margin-top:20px;text-align:center}
+.btn_set_bottom.m15{margin:20px 15px 0}
+.btn_set_bottom.s2 ul:after{content:'';display:block;clear:both}
+.btn_set_bottom.s2 li{width:50%;padding-right:5px;float:left;box-sizing:border-box}
+.btn_set_bottom.s2 li:nth-child(2){padding:0 0 0 5px}
+.btn_set_bottom .wid_btn {padding:0 60px;margin-top:40px}
+.btn_set_bottom .wid_btn a{display:block;margin:10px 0}
+.btn{display:inline-block}
+.btn.s1{height:38px;padding:0 27px;line-height:38px;font-size:13px;font-weight:400}
+.btn.s2{height:38px;line-height:38px;font-size:13px;font-weight:400;width:100%;letter-spacing:-0.5px}
+.btn.s2 span{display:inline-block;line-height:14px;vertical-align:middle}
+.btn.c1{background-color:#da291c;color:#fff}
+.btn.c2{background-color:#666;color:#fff}
+/* color */
+.f_red{color:#da291c!important}
+/* etc */
+.mt0{margin-top:0!important}
+.mt5{margin-top:5px!important}
+.mt10{margin-top:10px!important}
+.mt20{margin-top:20px!important}
+.mt30{margin-top:30px!important}
+.mt40{margin-top:40px!important}
+.mt50{margin-top:50px!important}
+.no_line{border:none!important}
+.bd_t{border-top:1px solid #e4e4e4}
+.bd_b{border-bottom:1px solid #e4e4e4}
+.bd_t.item{padding-top:20px;margin: 0 15px;}
+.pb40{padding-bottom:40px!important}
+/* 이메일무단수집거부 */
+.no_scroll{overflow:hidden}
+.dialog{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99999}
+.dialog_table{display:table;width:100%;height:100%;table-layout:fixed}
+.dialog_cell{display:table-cell;width:100%;height:100%;vertical-align:middle}
+.dialog_wrap{width:250px;margin:0 auto}
+.dialog_header{position:relative;background-color:#da291c}
+.dialog_header h2{padding:10px 50px 10px 15px;font-size:12px;font-weight:300;color:#fff}
+.dialog_content{padding:40px 10px;background-color:#fff}
+.dialog_wrap.full{position:absolute;top:0;left:0;right:0;bottom:0;width:auto}
+.dialog_wrap.full .dialog_content{position:absolute;top:39px;left:0;right:0;bottom:0;padding:20px 10px;overflow-y:auto;overflow-x:hidden}
+.dialog_wrap.full .tab_section{margin-top:0}
+.dialog_wrap.full .tab_section .tab_nav{position:relative;text-align:center}
+.dialog_wrap.full .tab_section .tab_nav:after{content:'';position:absolute;top:6px;left:50%;width:1px;height:12px;background-color:#e4e4e4}
+.dialog_wrap.full .tab_section .tab_nav li{float:none;display:inline-block;width:auto;padding:0 15px}
+.dialog_wrap.full .tab_section .tab_nav li a{display:block;padding-bottom:3px;border-bottom:1px solid #fff;font-size:14px;color:#888;text-align:center;vertical-align:middle}
+.dialog_wrap.full .tab_section .tab_nav li.active a{border-color:#da291c;color:#da291c;font-weight:500}
+.dialog_wrap.full .tab_section .tab_contents{margin-top:10px}
+.unemail{line-height:16px;font-size:12px;font-weight:300;color:#666;text-align:center}
+.unemail strong{display:block;padding-bottom:25px;font-weight:400;font-size:14px;color:#000}
+.dialog_ok{display:block;width:160px;height:38px;line-height:38px;margin:40px auto 0;background-color:#da291c;font-size:13px;color:#fff;text-align:center}
+.dialog_close{position:absolute;top:0;right:0;width:40px;height:36px;background:url(../../images/mob/common/ico_close_dialog.png) 50% 50% no-repeat;background-size:11px 11px;text-indent:-9999px}
+.dimmed{position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.5);z-index:9999}
+.no_scroll #mWrap{position:fixed;width:100%;overflow:hidden}
+/* 폰트사이즈*/
+.f20{line-height:22px!important;font-size:20px!important}
+.ac{text-align:center!important;}
+
+.popup_wrap{position:relative; width:auto;margin:20px; background:#eaeaea}
+.popup_wrap .pop_close{display:block; position:absolute;top:-35px;right:-7px; width:30px;height:30px; background:url(../../images/mob/common/pop_close.png) 8px 8px no-repeat;background-size:15px auto}
+.popup_wrap .image_view .view_img img{width:100%}
+.popup_wrap .image_view .tit{text-align:center;min-height:44px;padding:10px 0; font-size:15px;background:#fff;box-sizing:border-box;}
+.blind {position:absolute;overflow:hidden;clip:rect(0 0 0 0);margin:-1px;width:1px;height:1px;}
+
+.popup {position:absolute; top:70px; left:15.625%; width:68.75%; background:#000; box-shadow: 2px 2px 8px -2px #000; display:none}
+.popup .pop_cont {position:relative;}
+.popup .pop_cont img {width:100%}
+.popup .pop_cont a {position:absolute; left:11.363%; top:73.619%; width:77.274%; height:16.564%}
+.popup > p {padding:7px 10px 10px; color:#fff; font-size:12px; line-height:1}
+.popup input, .popup label {vertical-align:middle}
+.popup input {margin:2px 0 0}
+.popup a {float:right}
+.popup a img{width:13px}
