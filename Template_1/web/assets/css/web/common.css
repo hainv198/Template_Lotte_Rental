@@ -1239,8 +1239,9 @@ body.stopScroll #wrap {
 }
 /*==== End Contact us ====*/
 .rental_history {
-/*	margin-top: 100px;
-	background-color: #f6f1f2;*/
+	margin-top: 100px;
+	/*background-color: #f6f1f2;*/
+	background-color: #f7f7f7;
 }
 .rental_history .inner {
 	position: relative;
@@ -1248,7 +1249,7 @@ body.stopScroll #wrap {
 	height: 756px;
 	margin: 0 auto;
 	background: url(../../images/web/main/bg_history.jpg) center bottom no-repeat;
-	*zoom: 1;
+	*zoom: 1 !important;
 }
 .rental_history .inner:after {
 	content: "";
