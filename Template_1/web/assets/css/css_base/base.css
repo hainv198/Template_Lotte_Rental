@@ -7581,7 +7581,7 @@ li.slick-current .slider-opt04__layout01 .buttons .btn{
 .biolife-tab .tab-head .tabs{
     padding: 0;
     margin: 0 0 23px 0;
-    display: block;
+    display: flex;
     text-align: center;
 }
 .biolife-tab .tab-head .tabs .tab-element{
@@ -7622,9 +7622,9 @@ li.slick-current .slider-opt04__layout01 .buttons .btn{
 .tab-head__icon-top-layout a{
     display: inline-block;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #888888;
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
     padding-bottom: 4px;
     padding-left: 5px;
@@ -11238,10 +11238,10 @@ body.open-quickview-block .biolife-quickview-block{
     .biolife-banner__special .text-content .third-line,
     .biolife-banner__special .text-content .second-line {
         color: #333333;
-        font-size: 25px;
+        font-size: 20px;
     }
     .biolife-banner__special .text-content .third-line i{
-        font-size: 25px;
+        font-size: 18px;
     }
     .biolife-banner__special .product-detail{
         margin-top: 35px;
@@ -11944,6 +11944,7 @@ body.open-quickview-block .biolife-quickview-block{
     .biolife-brand-block .link-brand-item img{
         display: inline-block;
     }
+
     .newsletter-block.layout-03{
         padding-top: 90px;
         background-position: center left;

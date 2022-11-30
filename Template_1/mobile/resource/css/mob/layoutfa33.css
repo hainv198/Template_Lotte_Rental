@@ -333,7 +333,7 @@ header .btn_allmenu {
   top: 0;
   margin: 0 auto;
   width: 34px;
-  height: 1px;
+  /*height: 1px;*/
   background-color: #da291c;
 }
 .cont_tit_wrap.no_bar {
@@ -1674,6 +1674,17 @@ figure.effect-lily:hover p {
     /* background: transparent; */
     text-align: center;
     cursor: pointer;
+  }
+}
+@media only screen and (max-width: 769px) {
+  .esg-tit1 {
+    font-size: 20px !important;
+    padding: 0 !important;
+
+  }
+  .esg-tit2 {
+    font-size: 15px !important;
+    padding: 20px !important;
   }
 }
 

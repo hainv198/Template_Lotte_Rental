@@ -1799,13 +1799,13 @@ figure.effect-lily:hover p {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 }
-
+/*
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
 	color: #fff!important;
-	/*background-color: #fff;*/
+	!*background-color: #fff;*!
 	border-color: #E60013 #E60013 #E60316 !important;
 	background-color: #E60013 !important;
-}
+}*/
 .nav-tabs {
 	border-bottom: 1px solid #dee2e6;
 	margin-bottom: 50px !important;
@@ -3024,7 +3024,7 @@ a.btn.add-to-cart-btn {
 /*========== buy sell car =======*/
 
 .link-brand-item img {
-	width: 120px;
+	width: 150px;
 
 }
 .link-brand-item {
