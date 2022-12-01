@@ -7218,7 +7218,7 @@ li.slick-current .slider-opt04__layout01 .buttons .btn{
 }
 .biolife-banner__special .product-detail .add-to-cart-btn{
     font-size: 14px;
-    color: #ffffff;
+    color: #ffffff !important;
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 9px;
@@ -11241,7 +11241,7 @@ body.open-quickview-block .biolife-quickview-block{
         font-size: 20px;
     }
     .biolife-banner__special .text-content .third-line i{
-        font-size: 18px;
+        font-size: 13px;
     }
     .biolife-banner__special .product-detail{
         margin-top: 35px;
@@ -11393,17 +11393,18 @@ body.open-quickview-block .biolife-quickview-block{
         display: block;
     }
     #sidebar{
-        position: fixed;
+        /*position: fixed;*/
         top: 0;
-        left: -320px;
-        width: 300px;
-        height: 100vh;
+        /*left: -320px;*/
+        /*width: 300px;*/
+        z-index: 999;
+        height: 100%;
         background-color: #ffffff;
         -webkit-transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
         transition: all 0.3s ease 0s;
-        z-index: 100000;
+        /*z-index: 100000;*/
         -webkit-box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
         -moz-box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
         box-shadow: 3px 5px 14px -3px rgba(0,0,0,0.11);
@@ -11526,6 +11527,7 @@ body.open-quickview-block .biolife-quickview-block{
     }
     .biolife-banner__special .media img{
         display: inline-block;
+        height: 100% !important;
     }
     .biolife-banner__special .product-detail{
         margin-top: 0;
@@ -11544,7 +11546,8 @@ body.open-quickview-block .biolife-quickview-block{
     .biolife-banner__special .text-content .first-line,
     .biolife-banner__special .text-content .second-line,
     .biolife-banner__special .text-content .third-line{
-        display: none;
+        /*display: none;*/
+        font-size: 15px;
     }
     .biolife-banner__special .product-detail .price-contain .price-amount,
     .biolife-banner__special .product-detail .price-contain ins .price-amount{

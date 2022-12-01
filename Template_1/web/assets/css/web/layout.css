@@ -1799,13 +1799,12 @@ figure.effect-lily:hover p {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 }
-/*
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
 	color: #fff!important;
-	!*background-color: #fff;*!
+	/*background-color: #fff;*/
 	border-color: #E60013 #E60013 #E60316 !important;
 	background-color: #E60013 !important;
-}*/
+}
 .nav-tabs {
 	border-bottom: 1px solid #dee2e6;
 	margin-bottom: 50px !important;
@@ -2039,31 +2038,7 @@ a.btn.add-to-cart-btn {
 	border-radius: 4px;
 }
 
-.tuyendung-table .soluong {
-	width: 15%;
-}
-.tuyendung-table .vitri {
-	width: 65%;
-}
-.tuyendung-table .last {
-	width: 12%;
-}
-.tuyendung-table .t-row {
-	text-align: left;
-	border: 1px solid #DCDCDC;
-	border-left: 0;
-	border-right: 0;
-}
-.tuyendung-table .t-head {
-	padding: 16px 0;
-	font-size: 16px;
-}
-.tuyendung-table .t-item {
-	padding: 16px 0;
-}
-.tuyendung-table .t-item p {
-	margin: unset;
-}
+
 
 .collapse.in {
 	display: block;
@@ -2208,43 +2183,10 @@ a.btn.add-to-cart-btn {
 
 /* ===== Career Detail ======*/
 
-/*
-.search-result-list-detail-page .job-item .figure:hover {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}*/
-
-/*.search-result-list-detail-page .job-item .figure .title a:hover {
-	color: #f7a334;
-}*/
-
-/*.search-result-list-detail-page .job-item .figure .caption .salary em {
-	padding-right: 5px;
-	padding-left: 3px;
-}*/
-
-/*.search-result-list-detail-page .job-item .figure .caption .location {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}*/
-
-/*.search-result-list-detail-page .job-item .figure .caption .location em {
-	padding-right: 2px;
-	line-height: 1.5;
-}*/
 
 .search-result-list-detail {
 	padding: 40px 0;
 }
-
-/*.search-result-list-detail .side-wrapper {
-	padding-left: 1.875rem;
-}*/
-
-/*.search-result-list-detail .side-wrapper .banner-ad {
-	margin-bottom: 20px;
-}*/
 
 @media (max-width:576px) {
 	.search-result-list-detail .side-wrapper {
@@ -2276,51 +2218,6 @@ a.btn.add-to-cart-btn {
 	padding: 0;
 }
 
-/*
-.search-result-list-detail .job-item .figure .image a {
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	height: 100%;
-	padding: 5px;
-}
-*/
-
-/*
-.search-result-list-detail .job-item .figure .bottom-right-icon {
-	right: 10px;
-}
-*/
-
-/*.search-result-list-detail .job-item .figure .figcaption .caption .location {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-}*/
-
-/*.search-result-list-detail .job-item .figure .figcaption .caption .location em {
-	padding-right: 2px;
-	line-height: 1.5;
-}*/
-
-/*.search-result-list-detail .similar-jobs {
-	margin-bottom: 10px;
-}*/
-
-/*.search-result-list-detail .similar-jobs p {
-	color: #5d677a;
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-}*/
-
 @media (min-width:1025px) {
 	.search-result-list-detail .similar-jobs p {
 		font-size: 15px;
@@ -2328,17 +2225,6 @@ a.btn.add-to-cart-btn {
 		text-transform: uppercase;
 	}
 }
-
-/*.search-result-list-detail .apply-now-banner {
-	!*height: 360px;*!
-	background-repeat: no-repeat;
-	background-size: cover;
-}*/
-
-/*.search-result-list-detail .job-result-nav {
-	margin-top: 0;
-}*/
-
 @media (max-width:1440px) {
 	.search-result-list-detail .job-result-nav {
 		margin-bottom: 15px;
@@ -2388,45 +2274,6 @@ a.btn.add-to-cart-btn {
 	}
 }
 
-/*
-.search-result-list-detail .jobs-side-list {
-	max-height: 100%;
-	padding-right: 0;
-	overflow-y: hidden;
-}
-*/
-
-/*
-.search-result-list-detail .jobs-side-list .job-item .figure:hover {
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.search-result-list-detail .jobs-side-list .job-item .figure:hover .title a {
-	color: #f7a334;
-}
-
-.search-result-list-detail .cb-recommended-jobs-hunt {
-	border-bottom: none;
-}
-
-.search-result-list-detail .cb-recommended-jobs-hunt {
-	padding-bottom: 40px;
-}
-
-.search-result-list-detail .apply-form-success-image {
-	padding: 0;
-}
-
-.search-result-list-detail .apply-form-success-image .image img {
-	max-width: 100%;
-	height: auto;
-}
-
-.search-result-list-detail {
-	padding-top: 10px
-}
-*/
 .apply-now-btn a {
 	background: #E60013;
 	padding: 10px;
