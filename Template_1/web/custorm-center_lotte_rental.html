@@ -299,7 +299,7 @@
             <div class="container">
                 <div class="faq-title text-center">
                     <h2>Thông tin liên hệ</h2>
-                    <p class="esg-tit2">Hãy cung cấp thông tin của bạn cho chúng tôi để được hỗ trợ nhanh nhất.</p>
+                    <p class="esg-tit2 mt-3">Hãy cung cấp thông tin của bạn cho chúng tôi để được hỗ trợ nhanh nhất.</p>
                 </div>
                 <div class="row">
                     <!--Contact info-->
@@ -308,25 +308,22 @@
                             <div class="location_rental">
                                 <div class="location-item">
                                     <p class="m-0"><b><i class='bx bx-map'></i> Hà Nội</b></p>
-                                    <span>Tầng 7, Tòa nhà Paragon, Số 03, Đường Nguyễn Lương Bằng,
-                                            Phường Tân Phú, Quận 7
-                                            Thành phố Hồ Chí Minh, Việt Nam
+                                    <span>
+                                        Tầng 1, 2, Tòa nhà The Sun, đường Mễ Trì, Phường Mễ Trì, Quận Nam Từ Liêm, Hà Nội, Việt Nam
                                     </span>
                                 </div>
                                 <br>
                                 <div class="location-item">
                                     <p class="m-0"><b><i class='bx bx-map'></i> Đà Nẵng</b></p>
-                                    <span>Tầng 7, Tòa nhà Paragon, Số 03, Đường Nguyễn Lương Bằng,
-                                            Phường Tân Phú, Quận 7
-                                            Thành phố Hồ Chí Minh, Việt Nam
+                                    <span>
+                                        Phòng A, Tầng 6, Tòa nhà văn phòng Indochina Riverside, 74 Bạch Đằng, Phường Hải Châu 1, Quận Hải Châu, Thành phố Đà Nẵng, Việt Nam
                                     </span>
                                 </div>
                                 <br>
                                 <div class="location-item">
                                     <p class="m-0"><b><i class='bx bx-map'></i> Hồ Chí Minh</b></p>
-                                    <span>Tầng 7, Tòa nhà Paragon, Số 03, Đường Nguyễn Lương Bằng,
-                                            Phường Tân Phú, Quận 7
-                                            Thành phố Hồ Chí Minh, Việt Nam
+                                    <span>
+                                        Tầng 7, Tòa nhà Paragon, Số 03, Đường Nguyễn Lương Bằng, Phường Tân Phú, Quận 7 Thành phố Hồ Chí Minh, Việt Nam
                                     </span>
                                 </div>
                             </div>
@@ -397,14 +394,28 @@
                                         </select>
                                     </div>
                                     <div class="col-md-6">
-                                        <select class="input_popup_select-custorm">
-                                            <option >Chọn dịch vụ</option>
-                                            <option>Thuê xe dài hạn </option>
-                                            <option>Thuê xe ngắn hạn </option>
-                                            <option>Thuê thiết bị </option>
+                                        <select class="input_popup_select-custorm" id="date__selector">
+                                            <option value="default_time" >Chọn dịch vụ</option>
+                                            <option value="long_time">Thuê xe dài hạn </option>
+                                            <option value="short_time">Thuê xe ngắn hạn </option>
+                                            <option >Thuê thiết bị </option>
                                             <option>Mua - Bán xe </option>
                                         </select>
                                     </div>
+
+                                </div>
+
+                                <div id="short_time" class="colors short_time " style="display: none">
+                                    <p>Thời gian mong muốn</p>
+                                    <div class="row">
+                                        <div class="col-md-6 input_time">
+                                            <input type="datetime-local">
+                                        </div>
+                                        <div class="col-md-6 input_time">
+                                            <input type="datetime-local">
+                                        </div>
+                                    </div>
+
                                 </div>
 
                                 <p class="form-row">
@@ -628,6 +639,18 @@ tippy('#kakao', {
         var day = ("0" + date.getDate()).slice(-2);
         return year + month + day;
     }
+
+$(function() {
+    $('#date__selector').change(function(){
+        $('.colors').hide();
+        const showDetail = $(this).val();
+        if (showDetail == null) {
+            return ""
+        }else  {
+            $('#' + showDetail).show();
+        }
+    });
+});
 
 
 </script>

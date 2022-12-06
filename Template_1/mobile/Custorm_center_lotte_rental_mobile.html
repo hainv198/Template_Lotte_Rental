@@ -323,6 +323,7 @@
                       <input type="tel" name="phone" value="" placeholder="Số điện thoại" class="txt-input">
 
                     </p>
+
                     <div class="row chose-location">
                       <div class="col-md-6">
                         <select class="input_popup_select-custorm">
@@ -333,16 +334,42 @@
                         </select>
                       </div>
                       <div class="col-md-6">
-                        <select class="input_popup_select-custorm">
-                          <option >Chọn dịch vụ</option>
-                          <option>Thuê xe dài hạn </option>
-                          <option>Thuê xe ngắn hạn </option>
-                          <option>Thuê thiết bị </option>
+                        <select class="input_popup_select-custorm" id="date__selector">
+                          <option value="default_time" >Chọn dịch vụ</option>
+                          <option value="long_time">Thuê xe dài hạn </option>
+                          <option value="short_time">Thuê xe ngắn hạn </option>
+                          <option >Thuê thiết bị </option>
                           <option>Mua - Bán xe </option>
                         </select>
                       </div>
+
                     </div>
 
+                    <div id="short_time" class="colors short_time " style="display: none">
+                      <p>Thời gian mong muốn</p>
+                      <div class="row">
+                        <div class="col-md-6 input_time">
+                          <input type="datetime-local">
+                        </div>
+                        <div class="col-md-6 input_time">
+                          <input type="datetime-local">
+                        </div>
+                      </div>
+
+                    </div>
+                    <script>
+                      $(function() {
+                        $('#date__selector').change(function(){
+                          $('.colors').hide();
+                          const showDetail = $(this).val();
+                          if (showDetail == null) {
+                            return ""
+                          }else  {
+                            $('#' + showDetail).show();
+                          }
+                        });
+                      });
+                    </script>
                     <p class="form-row">
                       <textarea name="mes" id="mes-1" cols="30" rows="9" placeholder="Mô tả yêu cầu"></textarea>
                     </p>

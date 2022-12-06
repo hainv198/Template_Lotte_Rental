@@ -1,3 +1,5 @@
+
+
 ;(function (factory) {
     if (typeof module === 'object' && typeof module.exports === 'object') {
         factory(require('jquery'), window, document);
@@ -404,6 +406,7 @@ function showSlides(n) {
     /*captionText.innerHTML = dots[slideIndex-1].alt;*/
 }
 // Loading
+/*
 $(document).ready(function() {
     setTimeout(function() {
         $('#container_loding').addClass('loaded');
@@ -412,6 +415,11 @@ $(document).ready(function() {
                 $(this).remove();
             });}
     }, 3000);});
+
+*/
+
+
+
 
 // Slider
 var swiper = new Swiper(".slide-container", {
@@ -555,3 +563,5 @@ var swiper = new Swiper(".slide-container_bus_box2", {
         },
     },
 });
+
+
