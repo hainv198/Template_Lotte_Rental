@@ -4,7 +4,7 @@ header {
   position: fixed;
   z-index: 9999;
   width: 100%;
-  height: 55px;
+  height: 60px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   background-color: #fff;
 }
@@ -55,7 +55,7 @@ header .pg_gnb_wrap .pg_gnb {
 header .btn_allmenu {
   display: inline-block;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
   width: 42px;
   height: 50px;
@@ -358,7 +358,7 @@ header .btn_allmenu {
 .cont_tit_wrap .cont_tit {
   position: relative;
   padding: 0 15px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   color: #000;
   line-height: 25px;
@@ -556,6 +556,9 @@ footer .f_copyright {
   font-weight: 400;
   color: #222;
 }
+footer .f_menu li a {
+  font-size:13px;
+}
 .btn_goto_top {
   display: inline-block;
   position: fixed;
@@ -708,6 +711,7 @@ body.noScroll .m_gnb {
 /* Main Visual */
 .swiper-container.mob img {
   width: 100%;
+  margin-top: 61px;
 }
 .swiper-container.mob .swiper-pagination-bullets {
   transform: translateX(-50%);
@@ -2138,7 +2142,9 @@ figure.effect-lily:hover p {
   border-radius: 4px;
 }
 
-
+.detail-box strong,p {
+  font-size: 13px;
+}
 
 .collapse.in {
   display: block;
@@ -2284,8 +2290,12 @@ figure.effect-lily:hover p {
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
   color: #fff!important;
   /*background-color: #fff;*/
+  font-size: 13px;
   border-color: #E60013 #E60013 #E60316 !important;
   background-color: #E60013 !important;
+}
+.nav-tabs .nav-link {
+  font-size: 13px;
 }
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
@@ -3133,6 +3143,14 @@ figure.effect-lily:hover p {
     justify-content: center;
     margin-top: 10px;
   }
+  .third-line b {
+    font-size: 13px !important;
+  }
+  .biolife-banner__special .text-content .third-line i {
+    font-weight: 500;
+    color: #222222;
+    font-size: 16px;
+  }
 }
 
 @media only screen and (max-width: 830px) {
@@ -3195,8 +3213,11 @@ figure.effect-lily:hover p {
     margin-bottom: 20px;
   }
   .esg-tit2 {
-    font-size: 14px!important;
+    font-size: 13px!important;
     padding-top: 15px!important;
+  }
+  .info-title {
+    font-size: 20px;
   }
 
 }

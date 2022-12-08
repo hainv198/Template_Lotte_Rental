@@ -492,7 +492,7 @@ header.show .gnb nav > ul > li > ul {
 	width: 20px;
 	height: 20px;
 	cursor: pointer;
-	background: url("../../../resource/images/web/main/btnSlidePlay.png")
+	background: url("../../images/web/main/btnSlidePlay.png")
 	no-repeat 0px -20px;
 	font-size: 0;
 	text-indent: -9999px;

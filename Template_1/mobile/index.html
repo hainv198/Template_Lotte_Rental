@@ -488,7 +488,7 @@
             <img src="../web/assets/images/web/main/img_contact.png" width="40" alt="">
             <span> Kakaotalk</span>
           </a>
-          <a>
+          <a href="https://zalo.me/0398590088" id="linkzalo" rel="nofollow" target="_blank">
             <img src="../web/assets/images/web/main/img_contact1.webp" width="40" alt="">
             <span>Zalo</span>
           </a>
@@ -591,6 +591,9 @@
             <li>
               <a href="" target="_blank">Tuyển dụng</a>
             </li>
+            <li>
+              <a href="" target="_blank">Quản lí xe (GPS)</a>
+            </li>
           </ul>
         </div>
         <!--// Footer Menu -->
@@ -613,11 +616,9 @@
     </div>
     <div class="m_gnb">
       <div class="gnb_head">
-        <a href="index.html" class="loogo"
-          ><img
-            src="./resource/images/top_logo_en.png"
-            alt="Logo"
-        /></a>
+        <a href="index.html" class="loogo">
+          <img src="./resource/images/mob/company/logo_gnb_en.png" alt="Logo"/>
+        </a>
         <a href="#none" class="gnb_close">Close</a>
       </div>
       <div class="gnb_contents">
@@ -626,10 +627,13 @@
           <div class="panel open">
             <ul>
               <li>
-                <a href="about_lotte_rental_mb.html">Thông tin chung</a>
+                <a href="">Thông tin chung</a>
               </li>
               <li>
                 <a href="history_lotte_rental_mb.html">Lịch sử phát triển</a>
+              </li>
+              <li>
+                <a href="about_company_lotte_rental_mb.html">Cơ cấu tổ chức</a>
               </li>
               <li>
                 <a href="networld_lotte_rental_mb.html">Mạng lưới toàn cầu</a>
@@ -658,7 +662,6 @@
               <li>
                 <a href="PR_center_lotte_rental_mobile.html">Thông tin chung</a>
               </li>
-
             </ul>
           </div>
 
@@ -682,7 +685,9 @@
 
         </div>
         <ul class="language">
-          <li><a href="index.html" class="active">VN</a></li>
+          <li>
+            <a href="index.html" class="active">VN</a>
+          </li>
           <li>
             <a
               href=""
@@ -773,6 +778,8 @@
         var day = ("0" + date.getDate()).slice(-2);
         return year + month + day;
       }
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+      {document.getElementById("linkzalo").href="https://zalo.me/SĐT_Của_Bạn";}
     </script>
 
     <script src="../web/assets/js/scroll.js"></script>
