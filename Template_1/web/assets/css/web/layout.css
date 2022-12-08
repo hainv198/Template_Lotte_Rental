@@ -2826,3 +2826,45 @@ a.btn.add-to-cart-btn {
 
 
 }
+
+.vision_custom {
+	position: relative;
+	width: 550px;
+	height: 550px;
+	background-color: #E60013;
+	margin: auto;
+	border-radius:125px 163px;
+	transform: rotate(-45deg);
+}
+.list_vision {
+	position: absolute;
+	transform: rotate(45deg);
+	top:29px;
+	left: 63px;
+	color: #fff;
+
+}
+.list_vision ul li {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.list_vision ul li p {
+	padding: 1px;
+	background-color: #f2dede;
+}
+.list_vision ul li button {
+	font-size: 15px;
+	padding: 2px 5px;
+	color: #6c757d;
+	font-weight: 600;
+}
+.list_vision ul li .list-item-mission {
+	font-size: 25px;
+	font-weight: 600;
+}
+.image_vision {
+	position: absolute;
+	background-color: black;
+}
