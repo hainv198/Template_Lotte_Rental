@@ -588,6 +588,7 @@
 
 .area_cbl {
     margin-top: 70px;
+    margin-bottom: 70px;
 }
 
 .area_cbl ul::after {
@@ -662,7 +663,7 @@
     display: inline-block;
     width: 1180px;
     height: 2px;
-    background: url(../../../resource/images/web/company/bg_vision_dot.png)repeat-x 0 bottom;
+    background: url(../../images/web/company/bg_vision_dot.png)repeat-x 0 bottom;
 }
 
 .bx .b_tit {
